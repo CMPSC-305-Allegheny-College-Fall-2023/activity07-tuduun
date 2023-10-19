@@ -1,6 +1,6 @@
 /* 19 Oct 2023 */
 
-/* Name: Add Your Name Here */
+/* Name: Tuguldur Gantulga */
 
 /* Please place all necessary database build code from class in this file. Your instructor will provide further instructions */ 
 
@@ -23,7 +23,7 @@ CREATE TABLE clients (
 );
 
 
-.separator TODO
+.separator
 
 
 .import data/clients_dat.csv clients
