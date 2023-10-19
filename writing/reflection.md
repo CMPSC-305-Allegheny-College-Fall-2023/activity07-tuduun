@@ -6,8 +6,7 @@ Using Joins to find errors
 
 ### Name
 
-Add Your Name Here
-
+Tuguldurnemekh Gantulga
 ---
 
 #### Q1
