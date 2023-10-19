@@ -1,0 +1,33 @@
+/* 19 Oct 2023 */
+
+/* Name: Add Your Name Here */
+
+/* Please place all necessary database build code from class in this file. Your instructor will provide further instructions */ 
+
+DROP TABLE IF EXISTS suppliers;
+CREATE TABLE suppliers (
+    name VARCHAR NOT NULL PRIMARY KEY,
+    email VARCHAR NOT NULL,
+    company VARCHAR NOT NULL,
+    phone VARCHAR NOT NULL,
+    postalCode VARCHAR NOT NULL
+);
+
+DROP TABLE IF EXISTS clients;
+CREATE TABLE clients (
+    name VARCHAR NOT NULL PRIMARY KEY,
+    email VARCHAR NOT NULL,
+    company VARCHAR NOT NULL,
+    phone VARCHAR NOT NULL,
+    postalCode VARCHAR NOT NULL
+);
+
+
+.separator TODO
+
+
+.import data/clients_dat.csv clients
+.import data/suppliers_dat.csv suppliers
+
+/* Unix CLI command: cat builder.txt | sqlite3 myDB.sqlite3 */
+/* If you are using Windows, then you can copy and paste the above code into your SQLite3 client */
