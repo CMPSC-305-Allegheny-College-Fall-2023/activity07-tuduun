@@ -16,12 +16,16 @@ A mistake was made where a name was substituted for another. Use a `left join` i
 * Your query code:
 
 ``` SQL
-TODO
+SELECT c.name 
+FROM clients c
+LEFT JOIN suppliers s ON c.name = s.name
+WHERE s.name IS NULL;
+
 ```
 
 * What is the conflicting name that appears in one table and not the other?
 
-Name: TODO
+Name: Curran Evans
 
 #### Q2
 
@@ -30,12 +34,16 @@ Reverse your query from above to complete a `right join` to find the name. Pleas
 * Your query code:
 
 ``` SQL
-TODO
+SELECT s.name 
+FROM suppliers s
+LEFT JOIN clients c ON s.name = c.name
+WHERE c.name IS NULL;
+
 ```
 
 * What is the conflicting name that appears in one table and not the other?
 
-Name: TODO
+Name: Raymond Pratt
 
 #### Q3
 
@@ -44,12 +52,16 @@ Another error was made but this time a telephone number was incorrectly entered.
 * Your query code:
 
 ``` SQL
-TODO
+SELECT c.name 
+FROM clients c
+LEFT JOIN suppliers s ON c.name = s.name AND c.telephone != s.telephone
+WHERE s.telephone IS NOT NULL;
+
 ```
 
 * What is the conflicting name that appears in one table and not the other?
 
-Name: TODO
+Name: Ignatius Chaney
 
 #### Q4
 
@@ -58,12 +70,16 @@ Reverse your query from above to complete a `right join` to locate the name of t
 * Your query code:
 
 ``` SQL
-TODO
+SELECT s.name 
+FROM suppliers s
+LEFT JOIN clients c ON s.name = c.name AND s.telephone != c.telephone
+WHERE c.telephone IS NOT NULL;
+
 ```
 
 * What is the conflicting name that appears in one table and not the other?
 
-Name: TODO
+Name: Abigael Neal
 ---
 
 Did you remember to place your name to the top of this file?
